@@ -3,38 +3,60 @@
 The following file structure should be used:
 
 root
+
 |
+
 -- lib
+
 -- notebooks
+
 	|
+
 	-- *fldr per candidate*
+
 		|
+
 		-- *N - notebooks*
+
 	-- deliverable.ipynb
+
 -- src
+
 -- .gitignore
+
 -- requirements.txt
 
+
 **lib**
+
 lib contains all library code, useful for sharing utility functions, custom algorithms or cleaning functions so that we do not duplicate too much code. These can be imported in any notebook (make sure you add a the lib route to your path structure).
+
 
 If you are afraid of breaking anything in a common library, create a new branch first and make a merge request, ensuring you do not make breaking changes. 
 
 **notebooks**
+
+
 Version control is fucked up in notebooks, so if you have shareable code, commit them in the library folders. 
+
 
 We should work in the deliverable notebook together I suppose, integrating various parts of our project into one notebook. All individual work should be done in private notebooks, identified by you own folder.
 
 **src**
+
+
 Contains the full contents of the competition zip file. To ensure everyone works with the same data, try not to change anything in source. If we create a new, cleaned dataset that might be usefull, you can do one of two things:
 
--- Zip the end result and send it around, with instructions on where to put it in SRC to make it work for everyone. 
+-- Zip the end result and send it around, with instructions on where to put it in SRC to make it work for everyone.
+
 -- Share the cleaning code and let everyone generate the new dataset themselves, and store it in the exact same location. 
 
 **.gitignore**
+
 Basic gitignore, make sure we don't try to upload the entire src folder to git. 
 
 **requirements.txt**
+
 Used to maintain which libraries have been used. Please create a virtualenv to keep libraries consistent. 
 
 *how to create a virtualenv in windows*
