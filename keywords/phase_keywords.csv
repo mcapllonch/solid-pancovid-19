@@ -1,0 +1,51 @@
+﻿preclinical,Phase 0,Phase 1,Phase 2,Phase 3,Phase 4
+preclinical trial,phase 0,phase 1,phase 2,phase 3,phase 4
+preclinical study,phase zero,phase one,phase II,phase III,phase IV
+preclinical studies,phase o,phase I,phase two,phase three,phase four
+preclinical development,first-in-human,early phase,early phase,late phase,late phase
+nonclinical,subtherapeutic doses,clinical trial,clinical trial,clinical trial,clinical trial
+laboratory animals,small number of subjects,screening,preliminary efficacy,final confirmation,safety study
+adverse effects,10 to 15,safety,placebo,safety,sales
+immunogenicity,pharmacodynamics,first-in-person trial,100 to 300,efficacy,postmarketing
+vaccine safety,pharmacokinetics,20 to 80,efficacy,large groups of people,delineate risks
+immunological response,test drug,safety,safety,1000 to 3000,benefits
+toxicity,absorption,dosage ranges,healthy volunteers,effectiveness,optiamal use
+toxic effects,distribution,side effects,hundreds,side effects,drug lifetime
+dosage levels,metabolization,introducing,schedules,commonly used treatments,active medical use
+immune system interactions,removal,human popultion,therapeutic does,comparison,monitor stage
+preclinical protocol,excretion,new vaccine,IIA,collect information,vaccine usage
+drug reactions,drug interactions,control treatment,IIB,safe usage,adverse effects
+transgenic animals,FIH,placebo,dosing requirements,monitoring,long-term immunity
+genetically modified animals,exploratory trials,adjvant-containing cocktail,drug efficacy,toxicity,post-marketing
+animal testing,FDA,established vaccine,treatment study,immunogenicity,surveillance trials
+murine,human microdose studies,antibody production,different doses,SAE,safety surveillance
+canine,pharmacological effects,health outcomes,active comparator,large scale,pharmacovigilance
+primate,target imaging,protective efficacy,12 to 16 weeks,FDA,technical support
+porcine,clinical trial,trial protocol,weeks,randomized,after approval
+mice,,statistical test,,controlled,effectiveness
+ferrets,,statistical significance,,multicentre,cost-effectivenes
+monkey,,control groups,,long-term safety,intervention
+in vitro,,license,,8 to 12 months,real-world setting
+pig,,escalation study,,months,new population
+dog,,vaccine escalation,,large patient population,pregnant women
+allometrically,,adverse effects,,several hundred,rare adverse effects
+safe dosage,,SAE,,daily clinical life,long-term adverse effects
+FDA,,drug dosage,,benefit-risk relationship,longer time period
+EMA,,drug fequency,,outpatient,
+safety testing,,tolerability,,no in-house days,
+non-rodent species,,pharmacokinetics,,active comparator,
+human trials authorization,,pharmacodynamics,,phase IIIA,
+bench,,single ascending dose,,drug approval,
+bedside,,SAD,,pivotal study,
+preliminary,,multiple ascending dose,,phase IIIB,
+efficacy,,MAD,,publication,
+toxicity,,food effect,,marketing claims,
+pharmacokinetic,,food intake,,label extension,
+safetty information,,drug absorption,,prepare launch,
+test tube,,dosing regimen,,,
+cell culture,,,,,
+in vivo,,,,,
+in silico profiling,,,,,
+computer models,,,,,
+drug-target interaction,,,,,
+toxicology,,,,,
