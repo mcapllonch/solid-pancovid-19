@@ -10,7 +10,7 @@ class dummyDataHandler():
 		df = df.dropna(subset=['sha']).set_index('sha')
 		self.data = df
 		self.data.publish_time = self.data.publish_time.apply(clean_time)
-		self.data.publish_time = self.data.publish_time.apply(lambda x: x.strftime('%Y-%m') if not pd.isna(x) else np.nan)
+		self.data['publish_time_month'] = self.data.publish_time.apply(lambda x: x.strftime('%Y-%m') if not pd.isna(x) else np.nan)
 		self.dummy_keywords = ['mortality rate', 'extracorporeal membrane oxygenation (ECMO)', 'vaccine', 'interventions', 'clinical outcome', np.nan]
 		self.setUp()
 
@@ -19,9 +19,12 @@ class dummyDataHandler():
 		self.data['phase'] = [f'Phase {np.random.choice(np.arange(1,6), p=[0.5, 0.3, 0.1, 0.075, 0.025])}' for i in range(self.data.shape[0])]
 
 	def get_pivot(self):
-		pv = pd.pivot_table(self.data.reset_index(), values=['sha'], index=['tag', 'phase', 'publish_time'], aggfunc=np.count_nonzero).reset_index().rename(columns={'sha':'count'})
+		pv = pd.pivot_table(self.data.reset_index(), values=['sha'], index=['tag', 'phase', 'publish_time_month'], aggfunc=np.count_nonzero).reset_index().rename(columns={'sha':'count'})
 		return pv
 
+	def get_date_range_data(self, start, end):
+		out = self.data[(self.data['publish_time'] >= start) & (self.data['publish_time']<= end)]
+		return out
 
 def clean_time(val):
     try:
