@@ -49,6 +49,8 @@ app.layout = html.Div(children=[
                 multi=True,
                 value=[k for k in dh.data.phase.unique()]
             ),
+
+            # ADD FILTER BASED ON VIRUS TYPE
             dcc.DatePickerRange(
                 id='date-range',
                 min_date_allowed=min(dh.data.publish_time),
@@ -90,6 +92,8 @@ def show_point_data(data_dict):
     ]
     )
 def discover_plot(tag, phase, start, end):
+    #TODO make y, x and hue interchangable
+    #TODO filter on drug type
     try:
         start = datetime.strptime(start.split('T')[0], '%Y-%m-%d')
         end = datetime.strptime(end.split('T')[0], '%Y-%m-%d')
