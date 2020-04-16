@@ -53,8 +53,6 @@
     "\n",
     "import pandas as pd\n",
     "\n",
-    "from datetime import datetime\n",
-    "\n",
     "import nltk\n",
     "from nltk.corpus import stopwords\n",
     "from nltk.tokenize import word_tokenize\n",
